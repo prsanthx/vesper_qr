@@ -1,0 +1,51 @@
+:root {
+  /* color */
+  --ink: #141210;            /* primary text, dark surfaces */
+  --ink-2: #4a443d;          /* secondary text */
+  --ink-3: #7a7268;          /* tertiary text, placeholders (only on --card/--paper, large or non-essential) */
+  --paper: #f6f1e8;          /* page background */
+  --card: #fffdf8;           /* panels, inputs */
+  --hairline: #e4dccf;       /* 1px borders, dividers */
+  --hairline-strong: #cfc4b3;/* input borders on hover */
+  --accent: #8c5a32;         /* oxidized bronze: primary buttons, links, active states */
+  --accent-hover: #6f4524;
+  --accent-tint: #f1e6da;    /* selected type tile background */
+  --success: #2f6f4e;
+  --danger: #8f3d32;
+  --on-accent: #fffdf8;
+
+  /* type */
+  --font-display: "Fraunces Variable", "Fraunces", Georgia, serif;
+  --font-ui: "Outfit Variable", "Outfit", system-ui, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --fs-xs: 0.75rem;  --fs-sm: 0.875rem; --fs-md: 1rem; --fs-lg: 1.125rem;
+  --fs-xl: 1.5rem;   --fs-2xl: 2rem;    --fs-3xl: 2.75rem; --fs-4xl: 3.5rem;
+  --lh-tight: 1.1; --lh-body: 1.55;
+  --fw-ui: 400; --fw-ui-strong: 550; --fw-display: 500;
+
+  /* space (4px grid) */
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 24px;
+  --s-6: 32px; --s-7: 48px; --s-8: 64px; --s-9: 96px; --s-10: 128px;
+
+  /* shape */
+  --radius: 6px; --radius-sm: 4px;
+  --border: 1px solid var(--hairline);
+  --shadow-pop: 0 1px 0 rgba(20,18,16,.04), 0 8px 24px -12px rgba(20,18,16,.18); /* only for popovers/menus */
+
+  /* layout */
+  --header-h: 56px;
+  --content-max: 1200px;
+  --prose-max: 680px;
+
+  /* motion */
+  --dur: 200ms;          /* hover, panel changes: stay within 180–220ms */
+  --dur-fade: 220ms;     /* preview crossfade */
+  --ease: cubic-bezier(.2,.0,.0,1);
+
+  /* focus */
+  --focus: 0 0 0 2px var(--paper), 0 0 0 4px var(--accent);
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur: 0ms; --dur-fade: 0ms; }
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}

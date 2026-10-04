@@ -1,0 +1,4 @@
+.shell { min-height: 100vh; display: flex; flex-direction: column; }
+.main { flex: 1; width: min(100%, var(--content-max)); margin: 0 auto; padding: var(--s-6) var(--s-5); }
+.narrow { width: min(100%, var(--prose-max)); }
+.bare { min-height: 100vh; }

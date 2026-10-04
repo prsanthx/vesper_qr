@@ -1,0 +1,9 @@
+.footer { border-top: var(--border); padding: var(--s-8) var(--s-5); margin-top: var(--s-9); }
+.grid { max-width: var(--content-max); margin: 0 auto; display: grid; gap: var(--s-6); grid-template-columns: 1fr; }
+.col h3 { font-size: var(--fs-sm); font-family: var(--font-ui); font-weight: var(--fw-ui-strong); color: var(--ink); margin-bottom: var(--s-3); letter-spacing: 0; }
+.col a { display: block; color: var(--ink-2); text-decoration: none; font-size: var(--fs-sm); margin-bottom: var(--s-2); }
+.col a:hover { color: var(--accent); }
+.bottom { max-width: var(--content-max); margin: var(--s-7) auto 0; padding-top: var(--s-5); border-top: var(--border); color: var(--ink-3); font-size: var(--fs-sm); }
+@media (min-width: 768px) {
+  .grid { grid-template-columns: repeat(4, 1fr); }
+}

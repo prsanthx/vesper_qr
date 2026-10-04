@@ -1,0 +1,3 @@
+.section { padding: var(--s-7) 0; }
+@media (min-width: 768px) { .section { padding: var(--s-9) 0; } }
+.lead { color: var(--ink-2); max-width: 42rem; }

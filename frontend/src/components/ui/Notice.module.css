@@ -1,0 +1,6 @@
+.notice {
+  border: var(--border); border-radius: var(--radius); padding: var(--s-3) var(--s-4);
+  background: var(--card); color: var(--ink-2); font-size: var(--fs-sm); margin-bottom: var(--s-4);
+}
+.success { border-color: var(--success); color: var(--success); }
+.danger { border-color: var(--danger); color: var(--danger); }

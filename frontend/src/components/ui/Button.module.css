@@ -1,0 +1,16 @@
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--s-2);
+  height: 40px; padding: 0 16px; border-radius: var(--radius);
+  border: var(--border); cursor: pointer; text-decoration: none;
+  transition: background-color var(--dur) var(--ease), border-color var(--dur) var(--ease), color var(--dur) var(--ease);
+  font-weight: var(--fw-ui-strong); font-size: var(--fs-sm);
+}
+.primary { background: var(--accent); color: var(--on-accent); border-color: transparent; }
+.primary:hover { background: var(--accent-hover); color: var(--on-accent); }
+.secondary { background: var(--card); color: var(--ink); }
+.secondary:hover { border-color: var(--hairline-strong); }
+.quiet { background: transparent; border-color: transparent; color: var(--ink-2); height: auto; padding: 4px 8px; }
+.quiet:hover { color: var(--ink); }
+.danger { background: var(--card); color: var(--danger); }
+.dangerConfirm { background: var(--danger); color: var(--on-accent); border-color: transparent; }
+.btn:disabled { opacity: 0.55; cursor: not-allowed; }

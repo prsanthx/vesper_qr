@@ -1,0 +1,6 @@
+.panel {
+  border: 1px solid var(--success); border-radius: var(--radius); padding: var(--s-4);
+  background: var(--card); margin: var(--s-4) 0;
+}
+.title { color: var(--success); font-weight: var(--fw-ui-strong); margin-bottom: var(--s-4); }
+.actions { display: flex; flex-wrap: wrap; gap: var(--s-3); margin-top: var(--s-4); }

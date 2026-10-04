@@ -1,0 +1,23 @@
+.stage {
+  position: relative; aspect-ratio: 1; background: var(--card); border: var(--border);
+  border-radius: var(--radius); overflow: hidden; margin-bottom: var(--s-3);
+}
+.checker {
+  background-image:
+    linear-gradient(45deg, #e4dccf 25%, transparent 25%),
+    linear-gradient(-45deg, #e4dccf 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #e4dccf 75%),
+    linear-gradient(-45deg, transparent 75%, #e4dccf 75%);
+  background-size: 16px 16px;
+  background-position: 0 0, 0 8px, 8px -8px, -8px 0;
+}
+.img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; padding: 12px;
+  opacity: 0; transition: opacity var(--dur-fade) var(--ease);
+}
+.visible { opacity: 1; }
+.caption {
+  font-family: var(--font-mono); font-size: var(--fs-xs); color: var(--ink-3);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.toggle { margin-left: 8px; }
