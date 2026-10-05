@@ -70,7 +70,7 @@ UPDATE codes SET disabled_reason='abuse' WHERE slug='…';
 - API key second secret is named `manageToken` (not `editToken`) to avoid confusion with code edit tokens.
 - PNG frame text relies on embedded `@font-face` woff2 data URLs inside composed SVGs; if a browser fails to rasterize the font, canvas `fillText` after `document.fonts.ready` is the intended fallback (Chromium/Firefox should render the embedded face).
 - Legal pages are short original drafts — mark reviewed for your jurisdiction before launch (`content/legal.tsx`).
-- `BMC_USERNAME` defaults to `vesper` as a placeholder; change before launch.
+- `BMC_USERNAME` is set to `preshem7` (`https://www.buymeacoffee.com/preshem7`).
 - Vite `?inline` imports are used for frame font woff2 files so SVG/PNG exports stay self-contained offline.
 - Rate-limit middleware skips the small JSON body limit for multipart asset uploads; per-kind limits are enforced in the upload handler.
 - My codes falls back to in-memory storage when `localStorage` is blocked (private mode).

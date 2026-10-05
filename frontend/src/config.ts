@@ -1,6 +1,6 @@
 export const APP_NAME = "Vesper";
 // OWNER: set this to your real Buy Me a Coffee username before launch.
-export const BMC_USERNAME = "vesper";
+export const BMC_USERNAME = "preshem7";
 export const BMC_URL = `https://www.buymeacoffee.com/${BMC_USERNAME}`;
 export const LIMITS = {
   logoBytes: 1_000_000,
