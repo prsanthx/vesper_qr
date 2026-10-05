@@ -1,0 +1,8 @@
+.drop {
+  border: 1px dashed var(--hairline-strong); border-radius: var(--radius); background: var(--card);
+  padding: var(--s-5); text-align: center; color: var(--ink-2); cursor: pointer;
+  transition: border-color var(--dur) var(--ease);
+}
+.drop:hover, .active { border-color: var(--accent); }
+.input { display: none; }
+.error { color: var(--danger); font-size: var(--fs-sm); margin-top: var(--s-2); }

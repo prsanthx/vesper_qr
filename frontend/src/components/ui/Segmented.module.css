@@ -1,0 +1,7 @@
+.wrap { display: inline-flex; border: var(--border); border-radius: var(--radius); overflow: hidden; background: var(--card); }
+.btn {
+  height: 40px; padding: 0 14px; border: 0; border-right: var(--border); background: transparent;
+  cursor: pointer; color: var(--ink-2); font-size: var(--fs-sm); transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+.btn:last-child { border-right: 0; }
+.active { background: var(--accent-tint); color: var(--ink); font-weight: var(--fw-ui-strong); }

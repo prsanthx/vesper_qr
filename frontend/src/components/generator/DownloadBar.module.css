@@ -1,0 +1,14 @@
+.bar { display: flex; flex-wrap: wrap; gap: var(--s-3); align-items: center; margin: var(--s-4) 0; }
+.sponsor {
+  display: flex; justify-content: space-between; gap: var(--s-3); align-items: flex-start;
+  color: var(--ink-2); font-size: var(--fs-sm); margin-top: var(--s-2);
+}
+.sticky {
+  position: fixed; left: 0; right: 0; bottom: 0; height: 56px; z-index: 30;
+  display: none; align-items: center; gap: var(--s-3); padding: 0 var(--s-4);
+  background: var(--card); border-top: var(--border);
+}
+.thumb { width: 40px; height: 40px; object-fit: contain; border: var(--border); border-radius: var(--radius-sm); }
+@media (max-width: 1079px) {
+  .stickyVisible { display: flex; }
+}

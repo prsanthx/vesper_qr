@@ -1,0 +1,26 @@
+.picker { margin-bottom: var(--s-5); }
+.groupLabel {
+  font-size: var(--fs-sm); font-weight: var(--fw-ui-strong); color: var(--ink-2);
+  margin-bottom: var(--s-3);
+}
+.grid {
+  display: grid; gap: var(--s-2);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: var(--s-4);
+}
+.tile {
+  display: flex; align-items: center; gap: var(--s-2);
+  height: 40px; padding: 0 10px; border: var(--border); border-radius: var(--radius);
+  background: var(--card); cursor: pointer; font-size: var(--fs-sm); color: var(--ink);
+  transition: background-color var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+.tile:hover { border-color: var(--hairline-strong); }
+.selected { background: var(--accent-tint); border-color: var(--accent); }
+.icon { width: 18px; height: 18px; flex-shrink: 0; }
+.collapsed { max-height: 132px; overflow: hidden; }
+@media (min-width: 768px) {
+  .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (min-width: 1080px) {
+  .grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+}
